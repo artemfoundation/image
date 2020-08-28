@@ -119,7 +119,13 @@ const ImageInternal: React.FC<ImageProps> = ({
         {isError && fallback ? (
           <img {...imgCommonProps} src={fallback} />
         ) : (
-          <img {...imgCommonProps} onLoad={onLoad} onError={onError} src={src} />
+          <img
+            {...imgCommonProps}
+            onLoad={onLoad}
+            onError={onError}
+            src={src}
+            style={{ display: status === 'loading' ? 'none' : 'block' }}
+          />
         )}
 
         {status === 'loading' && (
