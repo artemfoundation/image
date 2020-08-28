@@ -124,7 +124,7 @@ const ImageInternal: React.FC<ImageProps> = ({
             onLoad={onLoad}
             onError={onError}
             src={src}
-            style={{ display: status === 'loading' ? 'none' : 'block', width, height }}
+            style={{ ...style, display: status === 'loading' ? 'none' : 'block' }}
           />
         )}
 
