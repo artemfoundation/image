@@ -1,5 +1,5 @@
 {
-  "name": "rc-image",
+  "name": "@innodata/rc-image",
   "version": "3.0.3",
   "description": "React easy to use image component",
   "keywords": [
@@ -43,7 +43,7 @@
     "@ant-design/icons": "^4.2.2",
     "@babel/runtime": "^7.11.2",
     "classnames": "^2.2.6",
-    "rc-dialog": "^8.1.0",
+    "rc-dialog": "8.1.1",
     "rc-util": "^5.0.6"
   },
   "devDependencies": {
